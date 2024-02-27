@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.PetBirthCalendar .react-calendar{
+    margin: 20px auto;
+    padding: 10px 0;
+    width: calc(100% - 40px);
+}
+.PetBirthCalendar .react-calendar .react-calendar__tile--active{
+    background: #FF5A5C;
+}
+.PetBirthCalendar .calendarDate{
+    margin: 0 auto 20px auto;
+    width: calc(100% - 40px);
+}

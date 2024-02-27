@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* ReservationPage */
+
+.reservWrap{
+    position: relative;
+}
+.reservWrap .photo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.reservWrap .photo p{
+    position: relative;
+}
+.reservWrap .photo p img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.reservWrap:nth-child(1) .photo p img{
+    top: 0px;
+    left: 0px;
+}
+.reservWrap:nth-child(2) .photo p img{
+    top: -10px;
+    left: -10px;
+}

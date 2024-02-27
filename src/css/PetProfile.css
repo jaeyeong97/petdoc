@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.PetProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PetProfile .petFace{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 45px;
+    background-color: #d9d9d9;
+}
+.PetProfile .petFace::before, .PetProfile .petFace::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 1px;
+    background-color: #333;
+}
+.PetProfile .petFace::before{
+    transform: rotate(90deg) translateY(7px);
+}
+.PetProfile .petFace input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 111;
+    text-indent: -9999px;
+}
+.PetProfile .petFace img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.PetProfile .PetProfileTxt{
+    font-size: 14px;
+    line-height: 25px;
+}
+.PetProfile .PetProfileTxt input{
+    border: none;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+.PetProfile .PetProfileTxt input:focus{
+    outline: none;
+}
+.PetProfile .PetProfileTxt input::placeholder{
+    font-size: 14px;
+    color: #9F9F9F;
+}
+.PetProfile .PetProfileTxt > div > span{
+    margin-right: 8px;
+}
+.PetProfile .PetProfileTxt .petKind{
+    padding-left: 12px;
+}

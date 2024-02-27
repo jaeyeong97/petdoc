@@ -1,0 +1,24 @@
+@charset "utf-8";
+.AddPets{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+}
+.AddPets .back_icon {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    cursor: pointer;
+}
+.AddPets .addBtn{
+    width: calc(100% - 40px);
+    height: 44px;
+    margin: 18px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #FF5A5C;
+}

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.BookMark .title{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding-top: 55px;
+        padding-bottom: 25px;
+        text-align: center;
+        z-index: 5000;
+        color: #333;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #fff;
+}
+.BookMark .BookMarkItemWrap{
+        padding-top: 100px;
+}

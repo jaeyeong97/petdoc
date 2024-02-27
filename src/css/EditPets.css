@@ -1,0 +1,38 @@
+@charset "utf-8";
+.EditPets{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+}
+.EditPets .back_icon {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    cursor: pointer;
+}
+.EditPets .btns{
+    height: 44px;
+    margin: 18px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #FF5A5C;
+}
+.EditPets .addBtn{
+    width: calc(100% - 40px);
+}
+.EditPets .editBtns{
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+}
+.EditPets .editBtn{
+    width: calc(50% - 6px);
+}
+.EditPets .noBtn{
+    display: none;
+}

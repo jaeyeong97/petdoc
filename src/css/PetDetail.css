@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* PetDetail */
+.PetDetail .PetDetailBorder{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 20px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebebeb;
+    color: #333;
+}
+.PetDetail .PetDetailIn > div {
+    width: calc(100% - 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+.PetDetail .PetDetailIn .type{
+    flex-direction: row;
+}
+.PetDetail .type p:first-child::after{
+    content: '|';
+    margin: 0 15px;
+}
+.PetDetail .PetDetailIn .age {
+    flex-direction: row;
+}
+.PetDetail .age p {
+    margin-right: 4px;
+}
+.PetDetail .age p:nth-child(2) {
+    font-size: 12px;
+    color: #9f9f9f;
+}
+.PetDetail .illness span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.PetDetail .PetDetailEdit{
+    display: flex;
+    justify-content: right;
+    margin: 10px 0;
+}
+.PetDetail .PetDetailEdit > div{
+    padding: 3px 7px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.PetDetail .react-calendar .react-calendar__tile--active{
+    background: #FF5A5C;
+}
+.PetDetail .calendarTitle{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 15px;
+}
+.PetDetail .calendarTitle > h3{
+    font-size: 16px;
+    line-height: 1.2em;
+}
+.PetDetail .react-calendar{
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.PetDetail .CalDate{
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.PetDetail .symptomList > p{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.PetDetail .symptomList > p > span:first-child{
+    display: inline-block;
+    width: 19%;
+    font-weight: 600;
+}
+.PetDetail .btnList{
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.PetDetail .btnList .btn{
+    width: 100%;
+    background-color: #FF5A5C;
+    color: #fff;
+    line-height: 35px;
+    border-radius: 20px;
+}

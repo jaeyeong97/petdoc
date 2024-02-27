@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* GNB.css */
+
+.GNB{
+    position: fixed;
+    bottom: 0;
+}
+.GNB_in{
+    display: flex;
+    width: 390px;
+    box-sizing: border-box;
+}
+.GNB_in > div{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #333;
+}

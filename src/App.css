@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@charset "utf-8";
+.App{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+    padding-top: 55px;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 700;
+    color: #FF5A5C;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Home{
+    padding-bottom: 125px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 예약카드버튼 */
+.Home .checkReserve{
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
-
-.App-link {
-  color: #61dafb;
+.Home .checkReserve div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #333;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: justify;
+    z-index: 10;
+    box-sizing: border-box;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Home .checkReserve div .material-symbols-outlined{
+    font-size: 30px;
 }
+.Home .checkReserve.hidden {
+    display: none;
+}
+/* 버튼 컴포넌트 */
+.btn.selected{
+    background-color: #FF5A5C;
+    color: #fff;
+    border-color: #FF5A5C;
+   }

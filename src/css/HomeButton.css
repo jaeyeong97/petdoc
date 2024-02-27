@@ -1,0 +1,42 @@
+@charset "utf-8";
+.homeBtns_wrap{
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    margin: 17px 20px 30px 20px;
+}
+.btn.consultBtn{
+    width: 161px;
+    height: 123px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    margin-right: 13px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 1px 10px #99999940;
+    background-color: #fff;
+    color: #666;
+    border: none;
+    background-image: url(/public/img/consultBtn.png);
+    background-size: 48px 59px;
+    background-position: center top 20px;
+    background-repeat: no-repeat;
+}/*상담하기버튼*/
+.nearHospitalBtn{
+    width: 161px;
+    height: 123px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 1px 10px #99999940;
+    background-color: #fff;
+    color: #666;
+    border: none;
+    background-image: url(/public/img/nearHospitalBtn.png);
+    background-size: 48px 59px;
+    background-position: center top 20px;
+    background-repeat: no-repeat;
+}/*가까운병원버튼*/
