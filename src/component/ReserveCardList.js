@@ -5,6 +5,8 @@ import { AnimalListDispatch } from "../App";
 import { AnimalList } from "../App";
 import ReserveCard from "./ReserveCard";
 import Button from "./Button";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ReserveCardList = ({ setCardOpen }) => {
     const animalList = useContext(AnimalList);
