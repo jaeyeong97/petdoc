@@ -1,0 +1,341 @@
+@charset "utf-8";
+.Hospital {
+  width: 100%;
+  margin: 100px auto 0;
+}
+.Hospital .searchBar_wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  padding: 55px 20px 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.Hospital .searchBar_wrap .searchBar {
+  top: 60px;
+  left: 20px;
+  width: calc(100% - 40px);
+}
+.Hospital .searchBar_wrap .back_icon {
+  top: 72px;
+  left: 30px;
+}
+.Hospital .searchBar_wrap .searchBar_icon {
+  top: 72px;
+  left: 58px;
+  color: #9f9f9f;
+}
+.Hospital .searchBar_wrap .close_icon {
+  top: 72px;
+  right: 34px;
+}
+/* HospitalCate */
+.Hospital .HospitalCate {
+  padding: 20px 20px 0;
+  margin-bottom: 85px;
+  box-sizing: border-box;
+}
+.Hospital .HospitalCate .EachHospital {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+  padding: 10px 0;
+  box-sizing: border-box;
+  color: #333;
+}
+.Hospital .HospitalCate .EachHospital .info {
+  width: 70%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.EachHospital .info .title_fav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1em;
+}
+.EachHospital .info .place {
+  display: flex;
+}
+.EachHospital .info .place span {
+  margin: 0 5px;
+  color: #999;
+}
+.EachHospital .info .place .far {
+  padding-top: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1em;
+}
+.EachHospital .info .place .address {
+  color: #999;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.EachHospital .info .time {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.EachHospital .info .time .noti {
+  padding: 1px 5px;
+  margin-right: 5px;
+  background-color: #1dae51;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+.EachHospital .info .time .noti.closed {
+  background-color: #999;
+}
+.EachHospital .info .call_num {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #999;
+}
+.EachHospital .info .call_num .material-symbols-outlined {
+  font-size: 14px;
+  font-variation-settings: "FILL" 1;
+  margin-right: 5px;
+}
+.EachHospital .info .btn {
+  max-width: 450px;
+}
+.EachHospital .info .btn button {
+  width: calc(50% - 6px);
+  padding: 4px 0;
+  margin: 0 3px;
+  border-radius: 20px;
+  background-color: #ff5a5c;
+  color: #fff;
+}
+.Hospital .HospitalCate .EachHospital .photo {
+  width: 30%;
+  height: 26vw;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #333;
+}
+.Hospital .HospitalCate .EachHospital .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Hospital .HospitalCate .EachHospital:hover .photo img {
+  opacity: 0.8;
+}
+/* 상세검색 버튼 */
+.HospitalFilterModalBtn {
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 1px 6px #999;
+  z-index: 10;
+  cursor: pointer;
+}
+.HospitalFilterModalBtn > span {
+  color: #333;
+}
+/* 상세검색 창 */
+.HospitalFilterModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 55px 0 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 500;
+}
+.HospitalFilterModal .modalTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  line-height: 20px;
+  color: #333;
+}
+.HospitalFilterModal .modalTop .material-symbols-outlined {
+  cursor: pointer;
+}
+.HospitalFilterModal .modalTop h3 {
+  font-size: 16px;
+}
+.HospitalFilterModal > div {
+  border-bottom: 1px solid #ebebeb;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+.HospitalFilterModal > div > h5 {
+  font-size: 14px;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+.HospitalFilterModal > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.HospitalFilterModal .FilterCheckBox {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 8px;
+  color: #333;
+}
+.HospitalFilterModal .FilterCheckBox input {
+  margin-right: 5px;
+}
+[type="checkbox"] {
+  accent-color: #ff5a5c;
+}
+.HospitalFilterModal .btnBox {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.HospitalFilterModal .btnBox .btn.submit {
+  width: 100%;
+  background-color: #ff5a5c;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+}
+/* 병원리스트, 지도 토글버튼(고정) */
+.Hospital.mapToggle,
+.Hospital .mapToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+  height: 30px;
+  z-index: 150;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 1px 6px #999;
+}
+/* 네이버 지도 */
+.Hospital .HospitalCateMap {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.HospitalCateMapWrap {
+  margin-top: -100px;
+  position: relative;
+  overflow: hidden;
+}
+.HospitalCateMapWrap #map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 85px);
+}
+/* 왼쪽 줌 막대 위치조정 */
+.HospitalCateMapWrap #map > div > div > div {
+  top: 150px;
+}
+.MapItem {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 151;
+}
+.MapItem .MapItem_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px -3px 10px #bdbdbd;
+  padding: 45px 20px 20px 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.MapItem .MapItem_wrap .text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.MapItem .MapItem_wrap .text .t_wrap {
+  display: flex;
+  align-items: center;
+}
+.MapItem .MapItem_wrap .text .title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.MapItem .MapItem_wrap .text .address {
+  font-size: 10px;
+  color: #9f9f9f;
+}
+.MapItem .MapItem_wrap .text .time span {
+  font-size: 12px;
+  color: #333;
+}
+.MapItem .MapItem_wrap .text .call {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.MapItem .MapItem_wrap .btns_wrap .btn {
+  width: 84px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #ff5a5c;
+}
+.MapItem .MapItem_wrap .btns_wrap .btn:first-child {
+  margin-right: 5px;
+}
+.MapItem .MapItem_wrap .hos_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.MapItem .MapItem_wrap .hos_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

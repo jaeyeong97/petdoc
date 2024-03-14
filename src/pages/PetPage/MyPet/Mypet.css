@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* Mypet */
+.MyPet{
+    width: 335px;
+    margin: 0 auto;
+}
+.MypetTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.MyPet h3{
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+}
+.MyPet button{
+    padding-top: 17px;
+}
+.MyPet .material-icons-outlined{
+    color: #999;
+}
+/* MypetItem */
+.MypetItem{
+    width: 335px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+}
+.MypetItemList{
+    display: flex;
+    justify-content: center;
+}
+.MypetItem div{
+    margin: 0 10px;
+}
+.MypetPhoto{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.MypetPhoto img{
+    width: 100%;
+    height: auto;
+}
+.MypetInfo{
+    padding-top: 5%;
+}
+.MypetInfo p{
+    margin-bottom: 3px;
+}
+
+.MypetInfo .birth{
+    font-size: 12px;
+    color: #999;
+}
+.goMyPage div{
+    display: flex;
+}
+.goMyPage p{
+    font-size: 13px;
+    text-decoration: underline;
+    color: #333;
+}
+.goMyPage .material-icons-outlined{
+    font-size: 12px;
+    padding: 5px 0 0 2px;
+    color: #333;
+    text-decoration: none;
+}
+.goMyPage.more{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+}

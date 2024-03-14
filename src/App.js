@@ -1,20 +1,20 @@
 import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
 import React, { useEffect, useState, useReducer, useRef } from 'react';
-import Loading from './pages/Loading';
-import Home from './pages/Home';
-import Hospital from './pages/Hospital';
-import Consult from './pages/Consult';
-import SearchPage from './pages/SearchPage';
-import HospitalInfo from './pages/HospialInfo';
-import Reservation from './pages/Reservation';
-import PetPage from './pages/PetPage';
-import PetDetail from './component/PetDetail';
-import BookMark from './pages/BookMark';
-import AddPetPage from './pages/AddPetPage';
-import EditPetPage from './pages/EditPetPage';
+import Loading from './pages/Loading/Loading';
+import Home from './pages/Home/Home';
+import Hospital from './pages/Hospital/Hospital';
+import Consult from './pages/Consult/Consult';
+import SearchPage from './pages/Search/SearchPage';
+import HospitalInfo from './pages/Hospital/HospitalInfo/HospitalInfo';
+import Reservation from './pages/Hospital/Reservation/Reservation';
+import PetPage from './pages/PetPage/PetPage';
+import PetDetail from './pages/PetPage/PetDetail/PetDetail';
+import BookMark from './pages/BookMark/BookMark';
+import AddPetPage from './pages/PetPage/EditPets/AddPet/AddPetPage';
+import EditPetPage from './pages/PetPage/EditPets/EditPet/EditPetPage';
 import { hospitalDummy } from '../src/util/dummy';
-import BottomMenu from './component/BottomMenu';
-import ScrollTop from './component/ScrollTop';
+import BottomMenu from './component/BottomMenu/BottomMenu';
+import ScrollTop from './component/ScrollTop/ScrollTop';
 import '../src/App.css';
 import 'react-calendar/dist/Calendar.css'
 
@@ -368,21 +368,21 @@ function App() {
                             <div className="App">
                                 <BrowserRouter>
                                     <ScrollTop />
-                                        <Routes>
-                                            <Route path='/' element={<Layout />}>
-                                                <Route index element={<Home />} />
-                                                <Route path='/hospital' element={<Hospital />} />
-                                                <Route path='/Consult' element={<Consult />} />
-                                                <Route path='/bookmark' element={<BookMark />} />
-                                                <Route path='/hospitalInfo/:hos_id' element={<HospitalInfo />} />
-                                                <Route path='/petpage/' element={<PetPage />} />
-                                                <Route path='/petdetail/:pet_id' element={<PetDetail />} />
-                                            </Route>
-                                            <Route path='/search' element={<SearchPage />} />
-                                            <Route path='/reservation/:hos_id' element={<Reservation />} />
-                                            <Route path='/addpets' element={<AddPetPage />} />
-                                            <Route path='/editpets/:pet_id' element={<EditPetPage />} />
-                                        </Routes>
+                                    <Routes>
+                                        <Route path='/' element={<Layout />}>
+                                            <Route index element={<Home />} />
+                                            <Route path='/hospital' element={<Hospital />} />
+                                            <Route path='/Consult' element={<Consult />} />
+                                            <Route path='/bookmark' element={<BookMark />} />
+                                            <Route path='/hospitalInfo/:hos_id' element={<HospitalInfo />} />
+                                            <Route path='/petpage/' element={<PetPage />} />
+                                            <Route path='/petdetail/:pet_id' element={<PetDetail />} />
+                                        </Route>
+                                        <Route path='/search' element={<SearchPage />} />
+                                        <Route path='/reservation/:hos_id' element={<Reservation />} />
+                                        <Route path='/addpets' element={<AddPetPage />} />
+                                        <Route path='/editpets/:pet_id' element={<EditPetPage />} />
+                                    </Routes>
                                 </BrowserRouter>
                             </div>
                         )}
