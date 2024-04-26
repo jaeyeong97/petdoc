@@ -7,10 +7,11 @@ const Chatting = ({ chatHistory }) => {
     const navigate = useNavigate();
     const [openText, setOpenText] = useState([]);
 
-    const toggleText = (i) => {
+    // 더보기 버튼 토글
+    const toggleText = (index) => {
         setOpenText((prevText) => {
             const newText = [...prevText];
-            newText[i] = !newText[i];
+            newText[index] = !newText[index]; // true/false 토글
             return newText;
         });
     };

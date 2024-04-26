@@ -1,15 +1,15 @@
 import "./Hospital.css";
-import { useState, useContext, useMemo } from "react";
+import { useState, useContext, useMemo, useEffect } from "react";
 import SearchBar from "../../component/SearchBar/SearchBar";
 import HospitalCate from "./HospitalCate/HospitalCate";
 import { HospitalList } from "../../App";
 import HospitalFilterModal from "./HospitalFilterModal/HospitalFilterModal";
 import Button from "../../component/Button/Button";
 
-const Hospital = () => {
+const Hospital = ({ handleBookmarkClick, bookmarkedHos }) => {
     const hospitalList = useContext(HospitalList);
     const [searchHospital, setSearchHospital] = useState(""); //검색바 필터링
-    const [isMap, setIsMap] = useState(true);
+    const [isMap, setIsMap] = useState(false);
     const handleMap = () => {
         setIsMap(!isMap);
     };
@@ -26,8 +26,9 @@ const Hospital = () => {
         });
     };
 
-    const [selectAnimals, setSelectAnimals] = useState(hospitalList);
+    const [selectAnimals, setSelectAnimals] = useState(hospitalList); //병원데이터 상태 관리
 
+    // 필터링 함수
     const checkValueHandle = (id, checked) => {
         toggleSelectedItem(id, checked);
         setSelectAnimals((prevAnimals) =>
@@ -42,6 +43,7 @@ const Hospital = () => {
         );
     };
 
+    // 검색창
     const filterSearch = useMemo(() => {
         return searchHospital === ""
             ? selectAnimals
@@ -62,8 +64,9 @@ const Hospital = () => {
             </div>
             <HospitalCate
                 filterSearch={filterSearch}
-                searchHospital={searchHospital}
                 isMap={isMap}
+                handleBookmarkClick={handleBookmarkClick}
+                bookmarkedHos={bookmarkedHos}
             />
             <HospitalFilterModal checkValueHandle={checkValueHandle} />
             {isMap ? (

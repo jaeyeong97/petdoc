@@ -210,7 +210,6 @@ const reducer = (state, action) => {
     }
     return newState;
 };
-
 export const HospitalList = React.createContext();
 export const AnimalList = React.createContext();
 export const AnimalListDispatch = React.createContext();
@@ -228,12 +227,34 @@ function App() {
     }, []);
 
     const [data, dispatch] = useReducer(reducer, petDummyList); //반려동물 데이터
-    const [hosData, hosdispatch] = useReducer(reducer, hospitalDummy);
+    const [hosData, hosdispatch] = useReducer(reducer, hospitalDummy); // 동물병원 데이터
     const dataId = useRef(3);
     const reserveId = useRef(2);
     const reserve = useRef([]);
     const symptomList = useRef([]);
     const symptomId = useRef(2);
+
+    const [bookmarkedHos, setBookmarkedHos] = useState([]); // 북마크 배열
+
+    const handleBookmarkClick = (hospital) => {
+        // 이미 북마크된 경우 해당 병원을 북마크 배열에서 제거하고, 아닌 경우에는 추가
+        if (bookmarkedHos.some(item => item.hos_id === hospital.hos_id)) {
+            // 이미 북마크된 경우 해당 병원을 북마크 배열에서 제거
+            setBookmarkedHos(prev => prev.filter(item => item.hos_id !== hospital.hos_id));
+        } else {
+            // 아직 북마크되지 않은 경우 해당 병원을 북마크 배열에 추가
+            setBookmarkedHos(prev => [...prev, hospital]);
+        }
+    };
+    // 페이지가 로드될 때 로컬 스토리지에서 북마크 배열 불러오기
+    useEffect(() => {
+        const localBookmarks = JSON.parse(localStorage.getItem('bookmarkedHos'));
+        setBookmarkedHos(localBookmarks);
+    }, []);
+    // 로컬 스토리지에 북마크 배열 저장
+    useEffect(() => {
+        localStorage.setItem('bookmarkedHos', JSON.stringify(bookmarkedHos));
+    }, [bookmarkedHos]);
 
     const onCreate = (pet_name, pet_breed, pet_sex, date, pet_weight, pet_disease, pet_photo) => {
         dispatch({
@@ -340,16 +361,6 @@ function App() {
         })
     }
 
-    const changeFav = (targetID, bookmark) => {
-        hosdispatch({
-            type: 'CHANGEFAV',
-            data: {
-                hos_id: targetID,
-                bookmark
-            }
-        })
-    }
-
     const Layout = () => {
         return (
             <div className='wrap'>
@@ -363,30 +374,28 @@ function App() {
         <HospitalList.Provider value={hosData}>
             <AnimalList.Provider value={data}>
                 <AnimalListDispatch.Provider value={{ onCreate, onRemove, onEdit, onReserveAdd, onReserveRemove, onSymptomAdd, onSymptomRemove }}>
-                    <Favorite.Provider value={{ changeFav }}>
-                        {loading ? (<Loading />) : (
-                            <div className="App">
-                                <BrowserRouter>
-                                    <ScrollTop />
-                                    <Routes>
-                                        <Route path='/' element={<Layout />}>
-                                            <Route index element={<Home />} />
-                                            <Route path='/hospital' element={<Hospital />} />
-                                            <Route path='/Consult' element={<Consult />} />
-                                            <Route path='/bookmark' element={<BookMark />} />
-                                            <Route path='/hospitalInfo/:hos_id' element={<HospitalInfo />} />
-                                            <Route path='/petpage/' element={<PetPage />} />
-                                            <Route path='/petdetail/:pet_id' element={<PetDetail />} />
-                                        </Route>
-                                        <Route path='/search' element={<SearchPage />} />
-                                        <Route path='/reservation/:hos_id' element={<Reservation />} />
-                                        <Route path='/addpets' element={<AddPetPage />} />
-                                        <Route path='/editpets/:pet_id' element={<EditPetPage />} />
-                                    </Routes>
-                                </BrowserRouter>
-                            </div>
-                        )}
-                    </Favorite.Provider>
+                    {loading ? (<Loading />) : (
+                        <div className="App">
+                            <BrowserRouter>
+                                <ScrollTop />
+                                <Routes>
+                                    <Route path='/' element={<Layout />}>
+                                        <Route index element={<Home />} />
+                                        <Route path='/hospital' element={<Hospital handleBookmarkClick={handleBookmarkClick} bookmarkedHos={bookmarkedHos} />} />
+                                        <Route path='/Consult' element={<Consult />} />
+                                        <Route path='/bookmark' element={<BookMark handleBookmarkClick={handleBookmarkClick} bookmarkedHos={bookmarkedHos} />} />
+                                        <Route path='/hospitalInfo/:hos_id' element={<HospitalInfo />} />
+                                        <Route path='/petpage/' element={<PetPage />} />
+                                        <Route path='/petdetail/:pet_id' element={<PetDetail />} />
+                                    </Route>
+                                    <Route path='/search' element={<SearchPage />} />
+                                    <Route path='/reservation/:hos_id' element={<Reservation />} />
+                                    <Route path='/addpets' element={<AddPetPage />} />
+                                    <Route path='/editpets/:pet_id' element={<EditPetPage />} />
+                                </Routes>
+                            </BrowserRouter>
+                        </div>
+                    )}
                 </AnimalListDispatch.Provider>
             </AnimalList.Provider>
         </HospitalList.Provider>

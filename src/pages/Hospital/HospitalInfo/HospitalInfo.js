@@ -2,7 +2,6 @@ import { useContext, useState, useEffect } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import { HospitalList } from "../../../App";
 import Button from '../../../component/Button/Button';
-import BookMarkStar from "../../BookMark/BookMarkStar/BookMarkStar";
 import './HospitalInfo.css';
 
 
@@ -37,7 +36,6 @@ const HospitalInfo = () => {
             <div className="h_head">
                 <div className="h_head1">
                     <h3>{originData.hos_name}</h3>
-                    <BookMarkStar id={originData.hos_id} book={originData.bookmark} />
                 </div>
                 <div className="h_head2">
                     <div>

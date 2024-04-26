@@ -3,10 +3,9 @@ import { useEffect, useState } from "react";
 import React from "react";
 import Button from "../../../component/Button/Button";
 import NaverMap from "../NaverMap/NaverMap";
-import BookMarkStar from "../../BookMark/BookMarkStar/BookMarkStar";
 
 const getDistance = (lat1, lon1, lat2, lon2) => {
-    const R = 6371;
+    const R = 6371; // 지구 반지름...
     const dLat = toRadians(lat2 - lat1);
     const dLon = toRadians(lon2 - lon1);
     const a =
@@ -26,17 +25,17 @@ const getCurrentTime = () => {
     const hours = now.getHours();
     const minutes = now.getMinutes();
     return `${hours}:${minutes}`;
-};// 실시간 기준으로 영업중/영업종료 계산
+};// 현재 시간 가져오기
 
 const isHospitalOpen = (openTime, closeTime) => {
     const currentTime = getCurrentTime();
     return currentTime >= openTime && currentTime <= closeTime;
-};// 실시간 기준으로 영업중/영업종료 계산
+};// 현재 시간 기준으로 영업중/영업종료 계산
 
 
-const HospitalCate = ({ filterSearch, isMap }) => {
+const HospitalCate = ({ filterSearch, isMap, handleBookmarkClick, bookmarkedHos }) => {
     const navigate = useNavigate();
-    const [userLocation, setUserLocation] = useState({ latitude: 0, longitude: 0 });
+    const [userLocation, setUserLocation] = useState({ latitude: 0, longitude: 0 }); // 사용자 위치 상태 변수
 
     useEffect(() => {
         // 사용자의 현재 위치를 가져오는 함수
@@ -45,7 +44,7 @@ const HospitalCate = ({ filterSearch, isMap }) => {
                 navigator.geolocation.getCurrentPosition(
                     (position) => {
                         const { latitude, longitude } = position.coords;
-                        setUserLocation({ latitude, longitude });
+                        setUserLocation({ latitude, longitude }); // 사용자 위치를 저장
                     },
                     (error) => {
                         console.error("현재 위치를 가져올 수 없습니다.", error.message);
@@ -65,7 +64,7 @@ const HospitalCate = ({ filterSearch, isMap }) => {
     }; // 전화하기 기능 
 
 
-    if (isMap === true) {
+    if (isMap) {
         return (
             <div className="HospitalCateMap">
                 <NaverMap filterSearch={filterSearch} userLocation={userLocation} />
@@ -80,7 +79,13 @@ const HospitalCate = ({ filterSearch, isMap }) => {
                             <div className="info">
                                 <div className="title_fav">
                                     <p onClick={() => { navigate(`/hospitalInfo/${hospital.hos_id}`) }}>{hospital.hos_name}</p>
-                                    <BookMarkStar id={hospital.hos_id} book={hospital.bookmark} />
+                                    <button onClick={() => handleBookmarkClick(hospital)}>
+                                        {bookmarkedHos.some(item => item.hos_id === hospital.hos_id) ? <div className="BookMarkStar">
+                                            <span className='material-symbols-outlined star_icon true'>grade</span>
+                                        </div> : <div className="BookMarkStar">
+                                            <span className='material-symbols-outlined star_icon'>grade</span>
+                                        </div>}
+                                    </button>
                                 </div>
                                 <div className="place">
                                     <p className="far">

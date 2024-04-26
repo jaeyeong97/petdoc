@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../../../component/Button/Button";
-import BookMarkStar from "../../BookMark/BookMarkStar/BookMarkStar";
 
 const MapItem = ({ hos_id, hos_name, address, call, open_time, close_time, hos_photo, bookmark }) => {
     const navigate = useNavigate();
@@ -12,7 +11,6 @@ const MapItem = ({ hos_id, hos_name, address, call, open_time, close_time, hos_p
                     <div className="t_wrap">
                         <span className="title" onClick={() => { navigate(`/hospitalInfo/${hos_id}`) }}>{hos_name}
                         </span>
-                        <span><BookMarkStar id={hos_id} book={bookmark} /></span>
                     </div>
                     <span className="address">{address}</span>
                     <div className="time">

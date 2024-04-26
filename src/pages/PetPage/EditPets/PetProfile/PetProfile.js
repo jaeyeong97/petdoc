@@ -8,7 +8,7 @@ const PetProfile = ({ petKind, handlePetKind, petName, handlePetName, handleImag
                     type="file"
                     onChange={handleImageChange}
                 />
-                <img src={selectedImage} />
+                <img src={selectedImage} alt="img" />
             </div>
             <div className="PetProfileTxt">
                 <div className="petKind">

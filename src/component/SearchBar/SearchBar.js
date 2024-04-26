@@ -8,6 +8,7 @@ const SearchBar = ({ search, searchRef, searchName, setSearch, onClick }) => {
         <div className='searchBar_wrap'>
             <input
                 type="text"
+                id='search'
                 value={search}
                 ref={searchRef}
                 className={searchName}

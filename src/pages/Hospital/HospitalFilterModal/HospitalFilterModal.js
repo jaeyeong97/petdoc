@@ -81,13 +81,15 @@ const HospitalFilterModal = ({ checkValueHandle }) => {
 
     if (viewModal === true) {
         return (
-            <div className="HospitalFilterModalBtn" onClick={handleViewModal}>
-                <span className="material-symbols-outlined">tune</span>
+            <div className="HospitalFilterModalBtn_wrap">
+                <div className="HospitalFilterModalBtn" onClick={handleViewModal}>
+                    <span className="material-symbols-outlined">tune</span>
+                </div>
             </div>
         )
     } else {
         return (
-            <div className="HospitalFilterModal">
+            <div div className="HospitalFilterModal" >
                 <div className="modalTop">
                     <span className="material-symbols-outlined closeModalBtn" onClick={handleViewModal}>arrow_back</span>
                     <h3>동물병원 상세검색</h3>
@@ -120,7 +122,7 @@ const HospitalFilterModal = ({ checkValueHandle }) => {
                 <p className="btnBox">
                     <Button btnText={'필터 적용'} btnClick={handleViewModal} btnName={'submit'} />
                 </p>
-            </div>
+            </div >
         )
     }
 

@@ -11,7 +11,7 @@ const SearchPage = () => {
     const [search, setSearch] = useState('');
 
     const filterResult = () => {
-        return search === '' ? [] : hospitalList.filter((it) => it.hos_name.toLowerCase().includes(search.toLowerCase()));//검색필터
+        return search === '' ? [] : hospitalList.filter((hospital) => hospital.hos_name.toLowerCase().includes(search.toLowerCase()));//검색필터
     }
     useEffect(() => {
         searchRef.current.focus();
