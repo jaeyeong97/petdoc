@@ -9,8 +9,9 @@ const HospitalInfo = () => {
     const hospitalList = useContext(HospitalList);
     const navigate = useNavigate();
     const { hos_id } = useParams();
-    const [originData, setOriginData] = useState({});
+    const [originData, setOriginData] = useState({}); // 클릭한 병원 상태관리
 
+    // 클릭한 병원의 아이디와 병원데이터의 아이디가 같은 것을 찾기
     useEffect(() => {
         if (hospitalList.length >= 1) {
             const targetHospital = hospitalList.find((it) =>
@@ -20,7 +21,7 @@ const HospitalInfo = () => {
                 setOriginData(targetHospital);
             }
         }
-    }, [hos_id, originData]);
+    }, [hos_id, originData, hospitalList]);
 
 
     return (
@@ -31,7 +32,7 @@ const HospitalInfo = () => {
                     btnText={<span className='material-icons-outlined'>arrow_back</span>}
                     btnClick={() => { navigate(-1) }}
                 />
-                <div className="h_photo"><img src={originData.hos_photo} /></div>
+                <div className="h_photo"><img src={originData.hos_photo} alt="동물병원 이미지" /></div>
             </div>
             <div className="h_head">
                 <div className="h_head1">

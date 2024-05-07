@@ -12,14 +12,14 @@ const PetRecord = ({
 }) => {
     const { onSymptomAdd } = useContext(AnimalListDispatch);
 
-    const [cough, setCough] = useState("1~3회"); //기침
+    const [cough, setCough] = useState("1~3회");
     const [runningNose, setRunningNose] = useState("투명함");
     const [hunger, setHunger] = useState("감소");
     const [urine, setUrine] = useState("0~2회");
     const [excrement, setExcrement] = useState("0회");
     const [temperature, setTemperature] = useState("낮음");
     const [active, setActive] = useState("거의 없음");
-    const [misc, setMisc] = useState(""); //텍스트
+    const [misc, setMisc] = useState(""); //기타
 
     const handleMiscChange = (e) => {
         setMisc(e.target.value)

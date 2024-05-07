@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import BottomMenu from '../../component/BottomMenu/BottomMenu';
 import Chatting from './Chatting/Chatting';
 import ConsultBtns from './ConsultBtns/ConsultBtns';
 import './Consult.css';
@@ -205,7 +204,6 @@ const Consult = () => {
             <h2 className='consult_title'>상담하기</h2>
             <Chatting chatHistory={chatHistory} />
             <ConsultBtns handleNumClick={handleNumClick} />
-            <BottomMenu />
         </div>
     )
 }

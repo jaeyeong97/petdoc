@@ -24,7 +24,7 @@ const EditPetPage = () => {
                 navigate('/');
             };
         }
-    }, [pet_id, animalList]);
+    }, [pet_id, animalList, navigate]);
     return (
         <div className="EditPetPage">
             {originData && <EditPets isEdit={true} originData={originData} />}

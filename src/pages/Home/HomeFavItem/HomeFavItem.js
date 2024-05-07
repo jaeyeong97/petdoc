@@ -1,9 +1,8 @@
 import "./HomeFavItem.css";
 import { useNavigate } from "react-router-dom";
 
-const HomeFavItem = ({ hos_id, hos_name, open_hours, bookmark, call }) => {
+const HomeFavItem = ({ hos_id, hos_name, open_hours, call }) => {
     const navigate = useNavigate();
-
     const handleCall = (phoneNumber) => {
         window.location.href = `tel:${phoneNumber}`;
     }; // 전화하기 기능 

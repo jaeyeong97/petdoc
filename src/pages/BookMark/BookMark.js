@@ -1,4 +1,3 @@
-import BottomMenu from "../../component/BottomMenu/BottomMenu";
 import "./BookMark.css";
 import Button from "../../component/Button/Button";
 import { useNavigate } from "react-router-dom";
@@ -42,7 +41,6 @@ const BookMark = ({ bookmarkedHos, handleBookmarkClick }) => {
                     </div>
                 ))}
             </div>
-            <BottomMenu />
         </div>
     );
 }

@@ -26,8 +26,7 @@ function NaverMap({ filterSearch, userLocation }) {
                     userLocation.longitude
                 ),
                 icon: {
-                    content: `<div style="background-color : #1DAE51; width : 20px; height : 20px; border-radius : 50%; border : 5px solid #fff;",></div>`,
-
+                    content: `<div style="background-color : #1DAE51; width : 20px; height : 20px; border-radius : 50%; border : 5px solid #fff;"></div>`,
                 },
             });
 
@@ -58,18 +57,20 @@ function NaverMap({ filterSearch, userLocation }) {
                     backgroundColor: 'transparent',
                 });
 
-                window.naver.maps.Event.addListener(marker, "click", (e) => {
+                // 미커 클릭했을 때 정보창 열리게
+                window.naver.maps.Event.addListener(marker, "click", () => {
                     infoWindow.open(map, marker);
                     setSelectedHospital(hospital);
                 });
 
-                window.naver.maps.Event.addListener(map, "click", function (e) {
+                //지도부분 클릭했을때 정보창닫히게
+                window.naver.maps.Event.addListener(map, "click", () => {
                     infoWindow.close();
                     setSelectedHospital(null);
-                });//지도부분 클릭했을때 정보창닫히게
+                });
 
             });
-    }, [filterSearch]);
+    }, [userLocation, filterSearch]);
 
     return (
         <div className="HospitalCateMapWrap">

@@ -7,6 +7,7 @@ const BottomMenu = () => {
     const location = useLocation();
     const [activeButton, setActiveButton] = useState('');
 
+    //url(location.pathname)이 바뀔때마다 실행
     useEffect(() => {
         if (location.pathname === '/') {
             setActiveButton('home');
@@ -17,7 +18,7 @@ const BottomMenu = () => {
         } else if (location.pathname === '/petpage') {
             setActiveButton('petpage');
         }
-    }, [location.pathname]);//url(location.pathname)이 바뀔때마다 실행
+    }, [location.pathname]);
 
     const handleClick = (path, button) => {
         navigate(path);

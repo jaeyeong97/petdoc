@@ -1,13 +1,11 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext, useCallback } from "react";
 import Calendar from "react-calendar";
 import moment from "moment";
 import { useNavigate } from "react-router-dom";
-
 import "./PetDetail.css";
 import PetRecord from "../PetRecord/PetRecord";
 import Button from "../../../component/Button/Button";
 import { AnimalListDispatch } from "../../../App";
-
 
 const PetDetail = ({
     pet_id,
@@ -30,24 +28,16 @@ const PetDetail = ({
     // 날짜 계산
     const calculateAge = (birthdate, currentDate) => {
         const diffInMilliseconds = currentDate - birthdate;
-
         const years = Math.floor(
             diffInMilliseconds / (365.25 * 24 * 60 * 60 * 1000)
         );
-
         const remainingTime = diffInMilliseconds % (365.25 * 24 * 60 * 60 * 1000);
         const months = Math.floor(remainingTime / (30.44 * 24 * 60 * 60 * 1000));
-
         return { years, months };
     };
 
-    useEffect(() => {
-        if (pet_symptoms) {
-            handleCalendar(value);
-        }
-    }, [value, pet_symptoms]);
-
-    const handleCalendar = (value) => {
+    //증상 날짜 선택 함수
+    const handleCalendar = useCallback((value) => {
         const morning = new Date(value);
         morning.setHours(0, 0, 0, 0);
         const afternoon = new Date(value);
@@ -56,14 +46,22 @@ const PetDetail = ({
             pet_symptoms && pet_symptoms.filter((item) =>
                 morning <= new Date(item.symptom_date) && new Date(item.symptom_date) <= afternoon)
         )
-    };
+    }, [pet_symptoms]);
 
+    useEffect(() => {
+        if (pet_symptoms) {
+            handleCalendar(value);
+        }
+    }, [value, pet_symptoms, handleCalendar]);
+
+    //반려동물 삭제경고함수
     const handleDelete = (id) => {
         window.confirm('삭제하시면 복구할 수 없습니다. 정말 삭제하시겠습니까?')
         onRemove(id);
         navigate(`/petpage/`);
     }
 
+    //증상 삭제경고함수
     const handleSymptomDelete = (symptomId) => {
         const shouldDelete = window.confirm('해당 날짜의 증상을 삭제하시겠습니까?');
         if (shouldDelete) {

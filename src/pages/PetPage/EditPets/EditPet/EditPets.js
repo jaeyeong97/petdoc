@@ -35,17 +35,15 @@ const Editpets = ({ isEdit, originData }) => {
     const handlePetDisease = (e) => {
         setPetDisease(e.target.value);
     };
+
     // 반려동물 이미지 업로드
     const handleImageChange = (e) => {
         const file = e.target.files[0];
-
         if (file) {
             const reader = new FileReader();
-
             reader.onload = (e) => {
                 setSelectedImage(e.target.result);
             };
-
             reader.readAsDataURL(file);
         }
     };
@@ -103,7 +101,7 @@ const Editpets = ({ isEdit, originData }) => {
             setPetWeight(originData.pet_weight)
             setSelectedImage(originData.pet_photo)
         }
-    }, [originData]);
+    }, [originData, isEdit]);
 
     return (
         <div className="EditPets">

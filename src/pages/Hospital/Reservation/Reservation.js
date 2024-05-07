@@ -62,7 +62,7 @@ const Reservation = () => {
                 setReserHos(targetHos);
             }
         }
-    }, [hos_id, reserHos])
+    }, [hos_id, reserHos, hospitalList]);
     const reserOpen = parseInt(reserHos.open_hours && reserHos.open_hours.open_time.substring(0, 2));
     const reserClose = parseInt(reserHos.open_hours && reserHos.open_hours.close_time.substring(0, 2));
     for (let i = reserOpen; i <= reserClose; i++) {
@@ -89,7 +89,7 @@ const Reservation = () => {
                         <Button
                             btnText={
                                 <div>
-                                    <p className="ani_photo"><img src={animal.pet_photo} /></p>
+                                    <p className="ani_photo"><img src={animal.pet_photo} alt="동물 사진" /></p>
                                     <p>{animal.pet_name}</p>
                                 </div>
                             }

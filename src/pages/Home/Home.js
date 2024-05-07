@@ -1,6 +1,5 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-
 import SearchBar from "../../component/SearchBar/SearchBar";
 import Button from "../../component/Button/Button";
 import BottomMenu from "../../component/BottomMenu/BottomMenu";
@@ -9,8 +8,6 @@ import Mypet from "../PetPage/MyPet/Mypet";
 import ReserveCardList from "./ReserveCardList/ReserveCardList";
 import { AnimalList } from "../../App";
 import './HomeButton/HomeButton.css'
-
-
 
 const Home = () => {
     const navigate = useNavigate();
@@ -22,8 +19,9 @@ const Home = () => {
         setCardOpen(true);
     }
 
+    // 반려동물 리스트를 순회하면서 예약건을 모두 합산해주는 함수
     const totalReservations = animalList.reduce((total, animal) => {
-        return total + (animal.reservations?.length || 0);
+        return total + animal.reservations?.length;
     }, 0);
 
     return (

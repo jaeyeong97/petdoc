@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AnimalList } from "../../App";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./PetPage.css";
 import Button from "../../component/Button/Button";
 import PetDetail from "../PetPage/PetDetail/PetDetail";
@@ -15,7 +15,6 @@ const PetPage = () => {
     const { onReserveRemove } = useContext(AnimalListDispatch);
     const [choosePet, setChoosePet] = useState(null);
     const [isMyPet, setIsMyPet] = useState(true);
-    const location = useLocation();
 
     const sliderSetting = {
         arrows: false,
@@ -31,12 +30,12 @@ const PetPage = () => {
     const clickPet = (id) => {
         setChoosePet(id);
     }
-
+    //반려동물 삭제시 남은 동물 중 첫번째 동물을 보여주는 함수
     useEffect(() => {
-        if (choosePet === null || (petDummy.length > 0 && !petDummy.find(pet => pet.pet_id === choosePet))) {
-            setChoosePet(petDummy[0]?.pet_id || null);
+        if (petDummy.length > 0 && !petDummy.find(pet => pet.pet_id === choosePet)) {
+            setChoosePet(petDummy[0]?.pet_id);
         }
-    }, [petDummy]);
+    }, [petDummy, choosePet]);
 
     const filterPetDummy = choosePet ? petDummy.filter((pet) => (pet.pet_id === choosePet)) : [];
 
@@ -46,12 +45,6 @@ const PetPage = () => {
             onReserveRemove(reservationId);
         }
     };
-
-    useEffect(() => {
-        if (location.state && location.state) {
-            setIsMyPet(location.state.isMyPet)
-        }
-    }, [location.state])
 
     if (isMyPet === true && choosePet !== null) {
         return (
@@ -135,7 +128,7 @@ const PetPage = () => {
                                             </div>
                                             <p className="hos_name">{reservation.hospital_name}</p>
                                             <p className="sub">방문목적: {reservation.reserve_purpose}</p>
-                                            <p className="sub">증상: {reservation.symptom == '' ? '없음' : reservation.symptom}</p>
+                                            <p className="sub">증상: {reservation.symptom === '' ? '없음' : reservation.symptom}</p>
                                         </div>
                                         <div className="photo" key={animal.pet_id}>
                                             <p className="pet_photo">

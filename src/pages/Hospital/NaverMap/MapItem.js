@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../../../component/Button/Button";
 
-const MapItem = ({ hos_id, hos_name, address, call, open_time, close_time, hos_photo, bookmark }) => {
+const MapItem = ({ hos_id, hos_name, address, call, open_time, close_time, hos_photo }) => {
     const navigate = useNavigate();
 
     return (

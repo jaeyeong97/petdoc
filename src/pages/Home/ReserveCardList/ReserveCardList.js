@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import Slider from "react-slick";
-
 import { AnimalListDispatch } from "../../../App";
 import { AnimalList } from "../../../App";
 import ReserveCard from "../ReserveCard/ReserveCard";
@@ -16,9 +15,10 @@ const ReserveCardList = ({ setCardOpen }) => {
         infinite: false
     }
 
+    // 전화하기 기능 
     const handleCall = (phoneNumber) => {
         window.location.href = `tel:${phoneNumber}`;
-    }; // 전화하기 기능 
+    };
 
     const handleReserDelete = (reservationId) => {
         const shouldDelete = window.confirm('예약을 취소하시겠습니까?');

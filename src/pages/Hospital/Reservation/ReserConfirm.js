@@ -1,23 +1,16 @@
 import Button from "../../../component/Button/Button";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const ReserConfirm = ({ setConfirmOpen, handleReservation }) => {
 
     const [checkedItems, setCheckedItems] = useState(false);
-    const navigate = useNavigate()
 
+    // 예약시 주의사항
     const handleCheck = () => {
         setCheckedItems(true);
     }
     const handleReservationSubmit = () => {
         checkedItems ? handleReservation() : alert('주의사항을 동의해야 확정이 가능합니다.')
-
-    }
-    const handlecheckfix = (setCheckedItems) => {
-        if (setCheckedItems === false) {
-            alert('예약 시 주의사항을 확인해주세요')
-        }
     }
 
     return (
