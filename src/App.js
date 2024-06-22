@@ -236,11 +236,13 @@ function App() {
             setBookmarkedHos(prev => [...prev, hospital]);
         }
     };
+
     // 페이지가 로드될 때 로컬 스토리지에서 북마크 배열 불러오기
     useEffect(() => {
         const localBookmarks = JSON.parse(localStorage.getItem('bookmarkedHos')) || [];
         setBookmarkedHos(localBookmarks);
     }, []);
+
     // 로컬 스토리지에 북마크 배열 저장
     useEffect(() => {
         localStorage.setItem('bookmarkedHos', JSON.stringify(bookmarkedHos));

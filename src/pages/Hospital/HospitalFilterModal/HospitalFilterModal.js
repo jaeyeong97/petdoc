@@ -63,8 +63,10 @@ const HospitalFilterModal = ({ checkValueHandle }) => {
 
     if (viewModal) {
         return (
-            <div className="HospitalFilterModalBtn" onClick={handleViewModal}>
-                <span className="material-symbols-outlined">tune</span>
+            <div className="HospitalFilterModalBtn_wrap">
+                <div className="HospitalFilterModalBtn" onClick={handleViewModal}>
+                    <span className="material-symbols-outlined">tune</span>
+                </div>
             </div>
         )
     } else {

@@ -1,70 +1,70 @@
 @charset "utf-8";
 
-/* HomeFavItem */
-.HomeFavItem{
-    width: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
+.HomeFavItem {
+  width: 50%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-.HomeFavItem:first-child{
-    margin-right: 6.5px;
+.HomeFavItem:first-child {
+  margin-right: 6.5px;
 }
-.HomeFavItem:nth-child(2){
-    margin-left: 6.5px;
+.HomeFavItem:nth-child(2) {
+  margin-left: 6.5px;
 }
-.favName{
-    display: flex;
-    margin-left: 6px;
-    margin-bottom: 4px;
+.favName {
+  display: flex;
+  margin-left: 6px;
+  margin-bottom: 4px;
 }
-.favName h3{
-    width: 100px;
-    margin-right: 4px;
-    font-size: 14px;
-    color: #333;
+.favName h3 {
+  width: 100px;
+  margin-right: 4px;
+  font-size: 14px;
+  color: #333;
 }
-.addFav{
-    width: 19px;
-    height: 18px;
+.addFav {
+  width: 19px;
+  height: 18px;
 }
-.addFav img{
-    margin-top: -6px;
+.addFav img {
+  margin-top: -6px;
 }
-.favHour{
-    padding-bottom: 6px;
-    border-bottom: 1px solid #9f9f9f;
-    margin-bottom: 6px;
+.favHour {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #9f9f9f;
+  margin-bottom: 6px;
 }
-.favHour > div{
-    font-size: 12px;
-    margin-left: 6px;
-    color: #9f9f9f;
+.favHour > div {
+  font-size: 12px;
+  margin-left: 6px;
+  color: #9f9f9f;
 }
-.favBtns{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.favBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 5px;
 }
-.btnReserv{
-    width: 75%;
-    text-align: center;
-    color: #fff;
-    line-height: 30px;
-    border-radius: 20px;
-    background-color: #ff5a5c;
+.btnReserv {
+  width: 75%;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #ff5a5c;
 }
-.btnCall{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background-color:#ebebeb ;
-    border-radius: 50%;
+.btnCall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ebebeb;
+  border-radius: 50%;
 }
-.btnCall img{
-    width: 15px;
-    height: 15px;
+.btnCall img {
+  width: 15px;
+  height: 15px;
 }

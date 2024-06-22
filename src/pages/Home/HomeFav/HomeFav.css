@@ -1,30 +1,29 @@
 @charset "utf-8";
 
 /* Home_fav */
-.HomeFav{
-    width: 375px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+.HomeFav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-.favHeader{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.favHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
-.favTitle{
-    font-size: 16px;
+.favTitle {
+  font-size: 16px;
 }
-.favHeader .btnMore{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.favHeader .btnMore {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-.favHeader .btnMore p{
-    font-size: 12px;
+.favHeader .btnMore p {
+  font-size: 12px;
 }
-/* HomeFavItem */
-.HomeFavIn{
-    display: flex;
-    justify-content: space-between;
+.HomeFavIn {
+  display: flex;
+  justify-content: space-between;
 }

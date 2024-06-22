@@ -119,13 +119,13 @@ const PetRecord = ({
                 onChange={setTemperature}
             >
                 <Radio name={"temperature"} value={"낮음"} defaultChecked>
-                    평균보다<br />낮음
+                    평균 이하
                 </Radio>
                 <Radio name={"temperature"} value={"평균"}>
                     평균
                 </Radio>
                 <Radio name={"temperature"} value={"높음"}>
-                    평균보다<br />높음
+                    평균 이상
                 </Radio>
             </RadioGroup>
             <RadioGroup

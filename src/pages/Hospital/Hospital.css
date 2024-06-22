@@ -152,8 +152,8 @@
 }
 /* 상세검색 버튼 */
 .HospitalFilterModalBtn {
-  position: fixed;
-  bottom: 100px;
+  position: absolute;
+  bottom: 0px;
   right: 40px;
   display: flex;
   justify-content: center;
