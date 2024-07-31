@@ -44,12 +44,7 @@ const HospitalInfo = () => {
                         <p>{(originData.call) === '정보 없음' ? '' : (originData.call)}</p>
                     </div>
                     <div>
-                        <span className="material-symbols-outlined ">pin_drop</span>
-                        <Button
-                            btnName={'showmap'}
-                            btnText={'지도보기'}
-                            btnClick={() => navigate('/hospital')}
-                        />
+                        <span className="material-symbols-outlined" onClick={() => navigate('/hospital')}>pin_drop</span>
                     </div>
                 </div>
             </div>

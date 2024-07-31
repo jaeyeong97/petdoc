@@ -56,8 +56,9 @@
 .BookMarkStar .star_icon {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
   color: #333;
+  padding-top: 0.5px;
   line-height: 14px;
-  font-size: 25px;
+  font-size: 28px;
 }
 .BookMarkStar .star_icon.true {
   font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 24;

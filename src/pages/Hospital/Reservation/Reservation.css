@@ -2,212 +2,212 @@
 
 /* Reservation.css */
 .ReserWrap {
-    padding: 0 10px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 768px; 
-    margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
 }
-.ReserWrap h3{
-    color: #333;
-    font-weight: 400;
-    margin-bottom: 10px;
+.ReserWrap h3 {
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
-.ReserHead{
-    padding-top: 20px;
-    display: flex;
-    color: #333;
+.ReserHead {
+  padding-top: 20px;
+  display: flex;
+  color: #333;
 }
 
 .ReserHead .btn .material-icons-outlined {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .ReserHead h2 {
-    margin-left: 5px;
-    font-size: 18px;
-    font-weight: 500;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .ReserAnimal {
-    margin-top: 15px;
-    display: flex;
+  margin-top: 15px;
+  display: flex;
 }
 .ReserAnimal div {
-    margin-right: 10px;
-    margin-bottom: 15px;
-    text-align: center;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .ani_photo {
-    width: 74px;
-    height: 74px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 5px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .ani_photo img {
-    width: 100%;
+  width: 100%;
 }
 
 .ReserHospital {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: 500;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 
 .ReserTime {
-    width: 100%;
-    margin: 0 auto 15px auto;
+  width: 100%;
+  margin: 0 auto 15px auto;
 }
 
 .ReserTime div {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 .ReserTime p {
-    margin: 0 5px 10px 0;
-    width: 50px;
-    box-sizing: border-box;
-    background-color: #ebebeb;
-    padding: 5px;
-    border-radius: 5px;
+  margin: 0 5px 10px 0;
+  width: 50px;
+  box-sizing: border-box;
+  background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .ReserTime .btn.active {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .ReserFor h3 {
-    color: #333;
-    margin-bottom: 10px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .ReserFor .hos_service {
-    padding: 10px;
-    background-color: #ebebeb;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .ReserFor .Resertext {
-    margin: 0 auto 15px auto;
-    width: 100%;
-    height: 100px;
+  margin: 0 auto 15px auto;
+  width: 100%;
+  height: 100px;
 }
 
-.ReserAnimal .btn.selected-animal{
-    opacity: 0.5;
+.ReserAnimal .btn.selected-animal {
+  filter: brightness(0.5);
 }
 
 /* ReserCalendar */
 .ReserCalendar {
-    width: 100%;
+  width: 100%;
 }
-.ReserCalendar .react-calendar{
-    width: 100%;
-    margin: 0 auto 15px auto;
+.ReserCalendar .react-calendar {
+  width: 100%;
+  margin: 0 auto 15px auto;
 }
-.reserDay{
-    margin-bottom: 10px;
+.reserDay {
+  margin-bottom: 10px;
 }
-.ReserCalendar .react-calendar .react-calendar__tile--active{
-    background-color: #FF5A5C;
+.ReserCalendar .react-calendar .react-calendar__tile--active {
+  background-color: #ff5a5c;
 }
 
 /* reserDay */
-.reserDay{
-    font-size: 16px;
-    width: 100%;
+.reserDay {
+  font-size: 16px;
+  width: 100%;
 }
 
 /* ReserTime */
-.ReserTime{
-    margin-bottom: 10px;
+.ReserTime {
+  margin-bottom: 10px;
 }
-.ReserTime .itresertime{
-    background-color: transparent;
-    color: #333;
-    border: 1px solid #555;
-    flex-wrap: wrap;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 50px;
+.ReserTime .itresertime {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #555;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 50px;
 }
 
 .Reserbtn {
-    width: 100%;
-    background-color: #FF5A5C;
-    color: #fff;
-    padding: 7px 0;
-    margin: 0 auto 20px auto;
-    border-radius: 20px;
+  width: 100%;
+  background-color: #ff5a5c;
+  color: #fff;
+  padding: 7px 0;
+  margin: 0 auto 20px auto;
+  border-radius: 20px;
 }
 
 /* ReserConfirm.css */
 
 .ReserConfirm {
-    position: fixed;
-    top: 5%;
-    left: 0;
-    right: 0;
-    bottom: 5%;
-    width: 90%;
-    max-width: 768px;
-    padding: 20px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px rgba(82, 81, 81, 0.2);
-    border-radius: 20px;
-    background-color: #fff;
-    z-index: 1000;
+  position: fixed;
+  top: 5%;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  width: 90%;
+  max-width: 768px;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(82, 81, 81, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+  z-index: 1000;
 }
 
 .ReserConfirm h3 {
-    color: #333;
-    margin-bottom: 20px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .ReserConfirm .close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .ReserConfirm .confirmText {
-    word-break: keep-all;
-    margin-bottom: 50px;
+  word-break: keep-all;
+  margin-bottom: 50px;
 }
 
 .ReserConfirm .confirmText p {
-    margin-bottom: 10px;
-    color: #333;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .confirmcheck {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .confirmcheck input {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .confirmfix {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 5px;
-    width: 80%;
-    border-radius: 20px;
-    background-color: #FF5A5C;
-    color: #fff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  width: 80%;
+  border-radius: 20px;
+  background-color: #ff5a5c;
+  color: #fff;
 }
