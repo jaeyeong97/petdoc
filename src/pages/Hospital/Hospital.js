@@ -9,7 +9,7 @@ import Button from "../../component/Button/Button";
 const Hospital = ({ handleBookmarkClick, bookmarkedHos }) => {
     const hospitalList = useContext(HospitalList);
     const [searchHospital, setSearchHospital] = useState(""); //검색바 필터링
-    const [isMap, setIsMap] = useState(false); // 지도, 리스트 토글 상태관리
+    const [isMap, setIsMap] = useState(true); // 지도, 리스트 토글 상태관리
     const [selectAnimals, setSelectAnimals] = useState([]); // 병원 state
 
     // 지도, 리스트 토글 함수
