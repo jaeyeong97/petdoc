@@ -46,7 +46,7 @@ function NaverMap({ filterSearch, userLocation }) {
                     map,
                     position,
                     icon: {
-                        content: `<img src="/img/marker.png" alt="Custom Marker">`,
+                        content: `<img src="/img/marker.webp" alt="Custom Marker">`,
                         size: new window.naver.maps.Size(30, 30), // 마커 이미지 크기
                         anchor: new window.naver.maps.Point(15, 15), // 마커 이미지의 중심점
                     },

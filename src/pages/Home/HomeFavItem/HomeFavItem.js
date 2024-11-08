@@ -27,7 +27,7 @@ const HomeFavItem = ({ hos_id, hos_name, open_hours, call }) => {
                     예약하기
                 </button>
                 <button className="btnCall" onClick={() => { handleCall(call) }}>
-                    <img src={`/img/call.png`} alt="callBtn" />
+                    <img src={`/img/call.webp`} alt="callBtn" />
                 </button>
             </div>
         </div>

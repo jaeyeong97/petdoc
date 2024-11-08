@@ -27,7 +27,7 @@ const petDummyList = [
         pet_birth: 1631000000000,
         pet_weight: 4,
         pet_disease: '없음',
-        pet_photo: '/img/dog.jpg',
+        pet_photo: '/img/dog.webp',
         reservations: [
             {
                 reserve_id: 0,
@@ -73,7 +73,7 @@ const petDummyList = [
         pet_birth: 1651363200000,
         pet_weight: 3,
         pet_disease: '허피스',
-        pet_photo: '/img/cat.jpg',
+        pet_photo: '/img/cat.webp',
         reservations: [
             {
                 reserve_id: 3,

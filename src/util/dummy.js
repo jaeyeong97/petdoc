@@ -15,7 +15,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/hospital52.png',
+        hos_photo: '/img/hospital52.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차', '미용'],
         bookmark: true
@@ -36,7 +36,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/hospital58.jpg',
+        hos_photo: '/img/hospital58.webp',
         poss_animals: ['고슴도치', '거북이', '특수동물'],
         service: ['주차'],
         bookmark: true
@@ -57,7 +57,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/hospital61.jpg',
+        hos_photo: '/img/hospital61.webp',
         poss_animals: ['강아지', '고양이', '햄스터'],
         service: ['주차', '미용'],
         bookmark: true
@@ -78,7 +78,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital73.jpg',
+        hos_photo: '/img/hospital73.webp',
         poss_animals: ['강아지', '고양이', '햄스터'],
         service: ['호텔'],
         bookmark: false
@@ -99,7 +99,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital4.jpg',
+        hos_photo: '/img/hospital4.webp',
         poss_animals: ['강아지', '고양이', '조류'],
         service: ['호텔', '미용'],
         bookmark: false
@@ -120,7 +120,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital5.jpg',
+        hos_photo: '/img/hospital5.webp',
         poss_animals: ['강아지', '고양이', '기니피그'],
         service: ['미용', '호텔'],
         bookmark: false
@@ -141,7 +141,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital6.jpg',
+        hos_photo: '/img/hospital6.webp',
         poss_animals: ['강아지', '고양이', '특수동물'],
         service: ['주차'],
         bookmark: false
@@ -162,7 +162,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['미용'],
         bookmark: false
@@ -183,7 +183,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital8.jpg',
+        hos_photo: '/img/hospital8.webp',
         poss_animals: ['강아지', '고양이', '페럿', '특수동물'],
         service: ['주차', '미용'],
         bookmark: false
@@ -204,7 +204,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital9.jpg',
+        hos_photo: '/img/hospital9.webp',
         poss_animals: ['강아지'],
         service: ['호텔'],
         bookmark: false
@@ -225,7 +225,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital10.jpg',
+        hos_photo: '/img/hospital10.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그'],
         service: ['미용'],
         bookmark: false
@@ -246,7 +246,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '특수동물'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -267,7 +267,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital12.jpg',
+        hos_photo: '/img/hospital12.webp',
         poss_animals: ['강아지', '고양이', '거북이'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -288,7 +288,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '햄스터'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -309,7 +309,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '조류'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -330,7 +330,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '페럿', '특수동물'],
         service: ['주차'],
         bookmark: false
@@ -351,7 +351,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '조류', '특수동물'],
         service: ['주차'],
         bookmark: false
@@ -372,7 +372,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차'],
         bookmark: false
@@ -393,7 +393,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그'],
         service: ['주차', '미용'],
         bookmark: false
@@ -414,7 +414,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '기니피그', '조류'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -435,7 +435,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital20.jpg',
+        hos_photo: '/img/hospital20.webp',
         poss_animals: ['강아지', '고양이', '페럿', '특수동물'],
         service: ['주차', '미용'],
         bookmark: false
@@ -456,7 +456,7 @@ export const hospitalDummy = [
             lunch_start: '없음',
             lunch_end: ''
         },
-        hos_photo: '/img/hospital21.jpg',
+        hos_photo: '/img/hospital21.webp',
         poss_animals: ['고슴도치', '거북이', '조류', '페럿', '특수동물'],
         service: ['미용'],
         bookmark: false
@@ -477,7 +477,7 @@ export const hospitalDummy = [
             lunch_start: '없음',
             lunch_end: ''
         },
-        hos_photo: '/img/hospital22.jpg',
+        hos_photo: '/img/hospital22.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -498,7 +498,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital23.jpg',
+        hos_photo: '/img/hospital23.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '기니피그'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -519,7 +519,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그', '거북이', '조류', '특수동물'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -540,7 +540,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -561,7 +561,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital26.jpg',
+        hos_photo: '/img/hospital26.webp',
         poss_animals: ['강아지', '고양이', '페럿', '특수동물'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -582,7 +582,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital26.jpg',
+        hos_photo: '/img/hospital26.webp',
         poss_animals: ['강아지', '고양이', '조류'],
         service: ['주차'],
         bookmark: false
@@ -603,7 +603,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital28.jpg',
+        hos_photo: '/img/hospital28.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '특수동물'],
         service: ['주차'],
         bookmark: false
@@ -624,7 +624,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital29.jpg',
+        hos_photo: '/img/hospital29.webp',
         poss_animals: ['강아지', '고양이'],
         service: [],
         bookmark: false
@@ -645,7 +645,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital30.jpg',
+        hos_photo: '/img/hospital30.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '페럿', '특수동물'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -666,7 +666,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital31.jpg',
+        hos_photo: '/img/hospital31.webp',
         poss_animals: ['강아지', '고양이', '거북이', '조류', '특수동물'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -687,7 +687,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital32.jpg',
+        hos_photo: '/img/hospital32.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차'],
         bookmark: false
@@ -708,7 +708,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital33.jpg',
+        hos_photo: '/img/hospital33.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그', '거북이', '특수동물'],
         service: ['주차', '미용'],
         bookmark: false
@@ -729,7 +729,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '기니피그', '특수동물'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -750,7 +750,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital35.jpg',
+        hos_photo: '/img/hospital35.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그', '거북이', '페럿'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -771,7 +771,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '조류', '페럿', '특수동물'],
         service: ['주차'],
         bookmark: false
@@ -792,7 +792,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital37.jpg',
+        hos_photo: '/img/hospital37.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -813,7 +813,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '페럿'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -834,7 +834,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital39.jpg',
+        hos_photo: '/img/hospital39.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '조류', '페럿'],
         service: [],
         bookmark: false
@@ -855,7 +855,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital40.jpg',
+        hos_photo: '/img/hospital40.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치'],
         service: ['주차', '미용'],
         bookmark: false
@@ -876,7 +876,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital41.jpg',
+        hos_photo: '/img/hospital41.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -897,7 +897,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/hospital42.jpg',
+        hos_photo: '/img/hospital42.webp',
         poss_animals: ['강아지', '고양이', '기니피그', '조류', '페럿', '특수동물'],
         service: ['미용', '호텔'],
         bookmark: false
@@ -918,7 +918,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital43.jpg',
+        hos_photo: '/img/hospital43.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '기니피그'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -939,7 +939,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital44.jpg',
+        hos_photo: '/img/hospital44.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '기니피그', '거북이', '페럿', '특수동물'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -960,7 +960,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/hospital45.jpg',
+        hos_photo: '/img/hospital45.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '기니피그', '거북이', '조류', '페럿', '특수동물'],
         service: ['주차'],
         bookmark: false
@@ -981,7 +981,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '햄스터'],
         service: [],
         bookmark: false
@@ -1002,7 +1002,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital47.jpg',
+        hos_photo: '/img/hospital47.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '조류'],
         service: [],
         bookmark: false
@@ -1023,7 +1023,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '햄스터'],
         service: ['주차'],
         bookmark: false
@@ -1044,7 +1044,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital49.jpg',
+        hos_photo: '/img/hospital49.webp',
         poss_animals: ['강아지', '고양이', '기니피그', '조류'],
         service: ['주차', '미용'],
         bookmark: false
@@ -1065,7 +1065,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '거북이'],
         service: ['주차'],
         bookmark: false
@@ -1086,7 +1086,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital51.jpg',
+        hos_photo: '/img/hospital51.webp',
         poss_animals: ['강아지', '고양이', '특수동물'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -1107,7 +1107,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital52.png',
+        hos_photo: '/img/hospital52.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '기니피그', '거북이', '조류', '페럿', '특수동물'],
         service: ['주차', '24시'],
         bookmark: false
@@ -1128,7 +1128,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['호텔'],
         bookmark: false
@@ -1149,7 +1149,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/hospital54.png',
+        hos_photo: '/img/hospital54.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차', '미용'],
         bookmark: false
@@ -1170,7 +1170,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치'],
         service: [],
         bookmark: false
@@ -1191,7 +1191,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital56.jpg',
+        hos_photo: '/img/hospital56.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '거북이', '조류'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -1212,7 +1212,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '14:30'
         },
-        hos_photo: '/img/hospital57.jpg',
+        hos_photo: '/img/hospital57.webp',
         poss_animals: ['강아지', '고양이', '고슴도치'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -1233,7 +1233,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:30'
         },
-        hos_photo: '/img/hospital58.jpg',
+        hos_photo: '/img/hospital58.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치'],
         service: ['주차', '24시'],
         bookmark: false
@@ -1254,7 +1254,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital59.jpg',
+        hos_photo: '/img/hospital59.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치', '기니피그', '거북이', '조류', '페럿', '특수동물'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -1275,7 +1275,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital60.jpg',
+        hos_photo: '/img/hospital60.webp',
         poss_animals: ['강아지', '고양이', '페럿', '특수동물'],
         service: ['주차'],
         bookmark: false
@@ -1297,7 +1297,7 @@ export const hospitalDummy = [
             lunch_end: '14:00'
         },
         poss_animals: ['강아지', '고양이'],
-        hos_photo: '/img/hospital61.jpg',
+        hos_photo: '/img/hospital61.webp',
         service: [],
         bookmark: false
     },
@@ -1317,7 +1317,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital62.jpg',
+        hos_photo: '/img/hospital62.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그', '거북이'],
         service: [],
         bookmark: false
@@ -1338,7 +1338,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:30'
         },
-        hos_photo: '/img/hospital63.jpg',
+        hos_photo: '/img/hospital63.webp',
         poss_animals: ['강아지', '고양이', '페럿', '특수동물'],
         service: ['호텔'],
         bookmark: false
@@ -1359,7 +1359,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital64.jpg',
+        hos_photo: '/img/hospital64.webp',
         poss_animals: ['강아지', '고양이', '특수동물'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -1380,7 +1380,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '고슴도치'],
         service: ['미용', '호텔'],
         bookmark: false
@@ -1401,7 +1401,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '거북이', '페럿'],
         service: ['주차'],
         bookmark: false
@@ -1422,7 +1422,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital67.jpg',
+        hos_photo: '/img/hospital67.webp',
         poss_animals: ['강아지', '고양이', '햄스터', '거북이'],
         service: [],
         bookmark: false
@@ -1443,7 +1443,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/nullhospital.png',
+        hos_photo: '/img/nullhospital.webp',
         poss_animals: ['강아지', '고양이', '고슴도치'],
         service: ['주차'],
         bookmark: false
@@ -1464,7 +1464,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital69.jpg',
+        hos_photo: '/img/hospital69.webp',
         poss_animals: ['강아지'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -1485,7 +1485,7 @@ export const hospitalDummy = [
             lunch_start: '12:00',
             lunch_end: '13:00'
         },
-        hos_photo: '/img/hospital70.jpg',
+        hos_photo: '/img/hospital70.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그', '거북이', '페럿'],
         service: ['주차', '미용', '호텔'],
         bookmark: false
@@ -1506,7 +1506,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:00'
         },
-        hos_photo: '/img/hospital71.jpg',
+        hos_photo: '/img/hospital71.webp',
         poss_animals: ['강아지', '고양이', '고슴도치', '기니피그', '거북이', '특수동물'],
         service: ['주차', '호텔'],
         bookmark: false
@@ -1527,7 +1527,7 @@ export const hospitalDummy = [
             lunch_start: '12:30',
             lunch_end: '13:30'
         },
-        hos_photo: '/img/hospital72.jpg',
+        hos_photo: '/img/hospital72.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차', '미용'],
         bookmark: false
@@ -1548,7 +1548,7 @@ export const hospitalDummy = [
             lunch_start: '13:00',
             lunch_end: '14:30'
         },
-        hos_photo: '/img/hospital73.jpg',
+        hos_photo: '/img/hospital73.webp',
         poss_animals: ['강아지', '고양이'],
         service: ['주차', '미용', '호텔'],
         bookmark: false

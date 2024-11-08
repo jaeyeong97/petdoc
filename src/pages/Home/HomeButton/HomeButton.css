@@ -24,10 +24,10 @@
 }
 .btn.consultBtn {
   margin-right: 13px;
-  background-image: url(/public/img/consultBtn.png);
+  background-image: url(/public/img/consultBtn.webp);
 }
 .nearHospitalBtn {
-  background-image: url(/public/img/nearHospitalBtn.png);
+  background-image: url(/public/img/nearHospitalBtn.webp);
 }
 .btn.consultBtn:hover,
 .nearHospitalBtn:hover {
