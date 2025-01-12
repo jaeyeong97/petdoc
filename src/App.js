@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
 import React, { useEffect, useState, useReducer, useRef } from 'react';
-import Loading from './pages/Loading/Loading';
 import Home from './pages/Home/Home';
 import Hospital from './pages/Hospital/Hospital';
 import Consult from './pages/Consult/Consult';
@@ -29,26 +28,6 @@ const petDummyList = [
         pet_disease: '없음',
         pet_photo: '/img/dog.webp',
         reservations: [
-            {
-                reserve_id: 0,
-                reserve_date: '2024/02/27',
-                reserve_time: '10:00',
-                reserve_purpose: '진료',
-                symptom: '구토, 노란 눈꼽 등',
-                hospital_name: '바로 동물병원',
-                hospital_address: '울산광역시 남구 화합로 197 1층 바로동물병원',
-                hospital_number: '052 - 250 - 1234'
-            },
-            {
-                reserve_id: 1,
-                reserve_date: '2024/02/19',
-                reserve_time: '10:00',
-                reserve_purpose: '미용',
-                symptom: '없음 ',
-                hospital_name: '이루아 동물병원',
-                hospital_address: '울산광역시 남구 화합로 197 1층 바로동물병원',
-                hospital_number: '052 - 250 - 5678'
-            }
         ],
         pet_symptoms: [
             {
@@ -77,7 +56,7 @@ const petDummyList = [
         reservations: [
             {
                 reserve_id: 3,
-                reserve_date: '2024/02/13',
+                reserve_date: '2025/06/13',
                 reserve_time: '10:00',
                 reserve_purpose: '예방접종',
                 symptom: '기침',
@@ -207,16 +186,6 @@ export const AnimalListDispatch = React.createContext();
 
 
 function App() {
-
-    const [loading, setLoading] = useState(true); // 로딩페이지 
-
-    //로딩시간 함수
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 2000);
-        return () => clearTimeout(timer);
-    }, []);
 
     const [data, dispatch] = useReducer(reducer, petDummyList); //반려동물 데이터
     const dataId = useRef(3);
@@ -375,28 +344,26 @@ function App() {
         <HospitalList.Provider value={hospitalDummy}>
             <AnimalList.Provider value={data}>
                 <AnimalListDispatch.Provider value={{ onCreate, onRemove, onEdit, onReserveAdd, onReserveRemove, onSymptomAdd, onSymptomRemove }}>
-                    {loading ? (<Loading />) : (
-                        <div className="App">
-                            <BrowserRouter>
-                                <ScrollTop />
-                                <Routes>
-                                    <Route path='/' element={<Layout />}>
-                                        <Route index element={<Home />} />
-                                        <Route path='/hospital' element={<Hospital handleBookmarkClick={handleBookmarkClick} bookmarkedHos={bookmarkedHos} />} />
-                                        <Route path='/Consult' element={<Consult />} />
-                                        <Route path='/bookmark' element={<BookMark handleBookmarkClick={handleBookmarkClick} bookmarkedHos={bookmarkedHos} />} />
-                                        <Route path='/hospitalInfo/:hos_id' element={<HospitalInfo />} />
-                                        <Route path='/petpage/' element={<PetPage />} />
-                                        <Route path='/petdetail/:pet_id' element={<PetDetail />} />
-                                    </Route>
-                                    <Route path='/search' element={<SearchPage />} />
-                                    <Route path='/reservation/:hos_id' element={<Reservation />} />
-                                    <Route path='/addpets' element={<AddPetPage />} />
-                                    <Route path='/editpets/:pet_id' element={<EditPetPage />} />
-                                </Routes>
-                            </BrowserRouter>
-                        </div>
-                    )}
+                    <div className="App">
+                        <BrowserRouter>
+                            <ScrollTop />
+                            <Routes>
+                                <Route path='/' element={<Layout />}>
+                                    <Route index element={<Home />} />
+                                    <Route path='/hospital' element={<Hospital handleBookmarkClick={handleBookmarkClick} bookmarkedHos={bookmarkedHos} />} />
+                                    <Route path='/Consult' element={<Consult />} />
+                                    <Route path='/bookmark' element={<BookMark handleBookmarkClick={handleBookmarkClick} bookmarkedHos={bookmarkedHos} />} />
+                                    <Route path='/hospitalInfo/:hos_id' element={<HospitalInfo />} />
+                                    <Route path='/petpage/' element={<PetPage />} />
+                                    <Route path='/petdetail/:pet_id' element={<PetDetail />} />
+                                </Route>
+                                <Route path='/search' element={<SearchPage />} />
+                                <Route path='/reservation/:hos_id' element={<Reservation />} />
+                                <Route path='/addpets' element={<AddPetPage />} />
+                                <Route path='/editpets/:pet_id' element={<EditPetPage />} />
+                            </Routes>
+                        </BrowserRouter>
+                    </div>
                 </AnimalListDispatch.Provider>
             </AnimalList.Provider>
         </HospitalList.Provider>

@@ -1,46 +1,44 @@
 @charset "utf-8";
 /* index.css */
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
 }
-.material-icons, 
-.material-icons-outlined, 
+.material-icons,
+.material-icons-outlined,
 .material-icons-round,
 .material-icons-sharp,
-.material-icons-two-tone{
-    vertical-align: top;
+.material-icons-two-tone {
+  vertical-align: top;
 }
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #121212;
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #121212;
 }
-ul, ol{
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-img{
-    vertical-align: top;
+img {
+  vertical-align: top;
 }
-input, textarea{
-    vertical-align: top;
-    font-family: 'Noto Sans KR', sans-serif;
+input,
+textarea {
+  vertical-align: top;
+  font-family: "Noto Sans KR", sans-serif;
 }
-button{
-    border: 0;
-    background-color: transparent;
-    vertical-align: top;
-    cursor: pointer;
-    font-family: 'Noto Sans KR', sans-serif;
+button {
+  border: 0;
+  background-color: transparent;
+  vertical-align: top;
+  cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }
